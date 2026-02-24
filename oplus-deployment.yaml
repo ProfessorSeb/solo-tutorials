@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: opus-4-6
+  namespace: your-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: opus-4-6
+  template:
+    metadata:
+      labels:
+        app: opus-4-6
+    spec:
+      containers:
+      - name: opus-4-6
+        image: agentgateway-proxy/claude-opus-4-6
+        resources:
+          requests:
+            memory: "16Gi"
+            cpu: "4"
