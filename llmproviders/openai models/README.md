@@ -1,0 +1,252 @@
+# OpenAI model support — inventory + smoke test
+
+**Generated:** 2026-02-26 10:49 AM EST  
+**Source:** `GET https://api.openai.com/v1/models` (docs: https://developers.openai.com/api/docs/models)
+
+## Summary
+
+- Models returned by `/models`: **122**
+- Smoke tests (minimal calls):
+  - Responses: `gpt-5.2` → **OK** (HTTP 200)
+  - Embeddings: `text-embedding-3-small` → **OK** (HTTP 200)
+
+Notes:
+- `/models` shows what this API key can see. Some models require specific endpoints (images/audio/etc.).
+- This file avoids costs by **not** executing a full per-model inference test across all returned models.
+
+## Model families (counts)
+
+| Family | Count |
+|---|---:|
+| GPT-5.x | 25 |
+| o-series (reasoning) | 16 |
+| GPT-4o | 18 |
+| GPT-4.1 | 6 |
+| GPT-4 | 7 |
+| GPT-3.5 | 6 |
+| Embeddings | 3 |
+| Moderation | 2 |
+| Images | 6 |
+| Audio / Realtime | 27 |
+| Computer Use | 2 |
+| Legacy | 2 |
+| Other | 2 |
+
+## Full model list (grouped)
+
+### GPT-5.x (25)
+
+```text
+gpt-5
+gpt-5-2025-08-07
+gpt-5-chat-latest
+gpt-5-codex
+gpt-5-mini
+gpt-5-mini-2025-08-07
+gpt-5-nano
+gpt-5-nano-2025-08-07
+gpt-5-pro
+gpt-5-pro-2025-10-06
+gpt-5-search-api
+gpt-5-search-api-2025-10-14
+gpt-5.1
+gpt-5.1-2025-11-13
+gpt-5.1-chat-latest
+gpt-5.1-codex
+gpt-5.1-codex-max
+gpt-5.1-codex-mini
+gpt-5.2
+gpt-5.2-2025-12-11
+gpt-5.2-chat-latest
+gpt-5.2-codex
+gpt-5.2-pro
+gpt-5.2-pro-2025-12-11
+gpt-5.3-codex
+```
+
+### o-series (reasoning) (16)
+
+```text
+o1
+o1-2024-12-17
+o1-pro
+o1-pro-2025-03-19
+o3
+o3-2025-04-16
+o3-deep-research
+o3-deep-research-2025-06-26
+o3-mini
+o3-mini-2025-01-31
+o3-pro
+o3-pro-2025-06-10
+o4-mini
+o4-mini-2025-04-16
+o4-mini-deep-research
+o4-mini-deep-research-2025-06-26
+```
+
+### GPT-4o (18)
+
+```text
+gpt-4o
+gpt-4o-2024-05-13
+gpt-4o-2024-08-06
+gpt-4o-2024-11-20
+gpt-4o-mini
+gpt-4o-mini-2024-07-18
+gpt-4o-mini-search-preview
+gpt-4o-mini-search-preview-2025-03-11
+gpt-4o-mini-transcribe
+gpt-4o-mini-transcribe-2025-03-20
+gpt-4o-mini-transcribe-2025-12-15
+gpt-4o-mini-tts
+gpt-4o-mini-tts-2025-03-20
+gpt-4o-mini-tts-2025-12-15
+gpt-4o-search-preview
+gpt-4o-search-preview-2025-03-11
+gpt-4o-transcribe
+gpt-4o-transcribe-diarize
+```
+
+### GPT-4.1 (6)
+
+```text
+gpt-4.1
+gpt-4.1-2025-04-14
+gpt-4.1-mini
+gpt-4.1-mini-2025-04-14
+gpt-4.1-nano
+gpt-4.1-nano-2025-04-14
+```
+
+### GPT-4 (7)
+
+```text
+gpt-4
+gpt-4-0125-preview
+gpt-4-0613
+gpt-4-1106-preview
+gpt-4-turbo
+gpt-4-turbo-2024-04-09
+gpt-4-turbo-preview
+```
+
+### GPT-3.5 (6)
+
+```text
+gpt-3.5-turbo
+gpt-3.5-turbo-0125
+gpt-3.5-turbo-1106
+gpt-3.5-turbo-16k
+gpt-3.5-turbo-instruct
+gpt-3.5-turbo-instruct-0914
+```
+
+### Embeddings (3)
+
+```text
+text-embedding-3-large
+text-embedding-3-small
+text-embedding-ada-002
+```
+
+### Moderation (2)
+
+```text
+omni-moderation-2024-09-26
+omni-moderation-latest
+```
+
+### Images (6)
+
+```text
+chatgpt-image-latest
+dall-e-2
+dall-e-3
+gpt-image-1
+gpt-image-1-mini
+gpt-image-1.5
+```
+
+### Audio / Realtime (27)
+
+```text
+gpt-4o-audio-preview
+gpt-4o-audio-preview-2024-12-17
+gpt-4o-audio-preview-2025-06-03
+gpt-4o-mini-audio-preview
+gpt-4o-mini-audio-preview-2024-12-17
+gpt-4o-mini-realtime-preview
+gpt-4o-mini-realtime-preview-2024-12-17
+gpt-4o-realtime-preview
+gpt-4o-realtime-preview-2024-12-17
+gpt-4o-realtime-preview-2025-06-03
+gpt-audio
+gpt-audio-1.5
+gpt-audio-2025-08-28
+gpt-audio-mini
+gpt-audio-mini-2025-10-06
+gpt-audio-mini-2025-12-15
+gpt-realtime
+gpt-realtime-1.5
+gpt-realtime-2025-08-28
+gpt-realtime-mini
+gpt-realtime-mini-2025-10-06
+gpt-realtime-mini-2025-12-15
+tts-1
+tts-1-1106
+tts-1-hd
+tts-1-hd-1106
+whisper-1
+```
+
+### Computer Use (2)
+
+```text
+computer-use-preview
+computer-use-preview-2025-03-11
+```
+
+### Legacy (2)
+
+```text
+babbage-002
+davinci-002
+```
+
+### Other (2)
+
+```text
+sora-2
+sora-2-pro
+```
+
+## OpenClaw note (allowlist)
+
+If your `openclaw.json` sets `agents.defaults.models`, that becomes a **model allowlist**.
+
+To use additional OpenAI models in OpenClaw, either:
+- add them under `agents.defaults.models`, or
+- remove/empty the allowlist so `/model` can pick anything.
+
+Example (add a few common ones):
+
+```json
+{
+  "agents": {
+    "defaults": {
+      "models": {
+        "openai/gpt-5.2": {
+          "alias": "gpt-5.2"
+        },
+        "openai/gpt-4o-mini": {
+          "alias": "4o-mini"
+        },
+        "openai/o3-mini": {
+          "alias": "o3-mini"
+        }
+      }
+    }
+  }
+}
+```
