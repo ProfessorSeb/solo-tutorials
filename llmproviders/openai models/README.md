@@ -1,20 +1,122 @@
-# OpenAI model support — inventory + smoke test
+# OpenAI model support — docs index vs API key
 
-**Generated:** 2026-02-26 10:49 AM EST  
-**Source:** `GET https://api.openai.com/v1/models` (docs: https://developers.openai.com/api/docs/models)
+**Generated:** 2026-02-26 10:57 AM EST  
+**Docs index source:** https://developers.openai.com/api/docs/models  
+**API inventory source:** `GET https://api.openai.com/v1/models`
 
-## Summary
+## Support summary
 
-- Models returned by `/models`: **122**
-- Smoke tests (minimal calls):
-  - Responses: `gpt-5.2` → **OK** (HTTP 200)
-  - Embeddings: `text-embedding-3-small` → **OK** (HTTP 200)
+| Category | Count |
+|---|---:|
+| Models on OpenAI docs index | 76 |
+| Models returned by this API key (`/models`) | 122 |
+| Docs-index models **supported** (present in `/models`) | 67 |
+| Docs-index models **NOT supported** (missing from `/models`) | 9 |
+| Extra models visible to the API key (not on docs index) | 55 |
+
+### NOT supported (docs index models missing from `/models`)
+
+```text
+chatgpt-4o-latest
+codex-mini-latest
+gpt-4.5-preview
+gpt-oss-120b
+gpt-oss-20b
+o1-mini
+o1-preview
+text-moderation-latest
+text-moderation-stable
+```
+
+### Supported (docs index models present in `/models`)
+
+```text
+babbage-002
+chatgpt-image-latest
+computer-use-preview
+dall-e-2
+dall-e-3
+davinci-002
+gpt-3.5-turbo
+gpt-4
+gpt-4-turbo
+gpt-4-turbo-preview
+gpt-4.1
+gpt-4.1-mini
+gpt-4.1-nano
+gpt-4o
+gpt-4o-audio-preview
+gpt-4o-mini
+gpt-4o-mini-audio-preview
+gpt-4o-mini-realtime-preview
+gpt-4o-mini-search-preview
+gpt-4o-mini-transcribe
+gpt-4o-mini-tts
+gpt-4o-realtime-preview
+gpt-4o-search-preview
+gpt-4o-transcribe
+gpt-4o-transcribe-diarize
+gpt-5
+gpt-5-chat-latest
+gpt-5-codex
+gpt-5-mini
+gpt-5-nano
+gpt-5-pro
+gpt-5.1
+gpt-5.1-chat-latest
+gpt-5.1-codex
+gpt-5.1-codex-max
+gpt-5.1-codex-mini
+gpt-5.2
+gpt-5.2-chat-latest
+gpt-5.2-codex
+gpt-5.2-pro
+gpt-5.3-codex
+gpt-audio
+gpt-audio-1.5
+gpt-audio-mini
+gpt-image-1
+gpt-image-1-mini
+gpt-image-1.5
+gpt-realtime
+gpt-realtime-1.5
+gpt-realtime-mini
+o1
+o1-pro
+o3
+o3-deep-research
+o3-mini
+o3-pro
+o4-mini
+o4-mini-deep-research
+omni-moderation-latest
+sora-2
+sora-2-pro
+text-embedding-3-large
+text-embedding-3-small
+text-embedding-ada-002
+tts-1
+tts-1-hd
+whisper-1
+```
+
+## Smoke tests (cheap, endpoint-level sanity check)
+
+- Responses API:
+  - model: `gpt-5.2` → **OK** (HTTP 200)
+- Embeddings API:
+  - model: `text-embedding-3-small` → **OK** (HTTP 200)
 
 Notes:
-- `/models` shows what this API key can see. Some models require specific endpoints (images/audio/etc.).
-- This file avoids costs by **not** executing a full per-model inference test across all returned models.
+- This repo treats **“supported”** as “the model ID appears in `GET /v1/models` for this API key.”
+- Many models require different endpoints (images/audio/moderation/realtime).
+- We intentionally avoid running a full per-model inference matrix here to keep cost low.
 
-## Model families (counts)
+## API model inventory (grouped)
+
+These are *all* model IDs returned by `GET /v1/models` for this API key.
+
+### Families (counts)
 
 | Family | Count |
 |---|---:|
@@ -32,9 +134,9 @@ Notes:
 | Legacy | 2 |
 | Other | 2 |
 
-## Full model list (grouped)
+### Full list (grouped)
 
-### GPT-5.x (25)
+#### GPT-5.x (25)
 
 ```text
 gpt-5
@@ -64,7 +166,7 @@ gpt-5.2-pro-2025-12-11
 gpt-5.3-codex
 ```
 
-### o-series (reasoning) (16)
+#### o-series (reasoning) (16)
 
 ```text
 o1
@@ -85,7 +187,7 @@ o4-mini-deep-research
 o4-mini-deep-research-2025-06-26
 ```
 
-### GPT-4o (18)
+#### GPT-4o (18)
 
 ```text
 gpt-4o
@@ -108,7 +210,7 @@ gpt-4o-transcribe
 gpt-4o-transcribe-diarize
 ```
 
-### GPT-4.1 (6)
+#### GPT-4.1 (6)
 
 ```text
 gpt-4.1
@@ -119,7 +221,7 @@ gpt-4.1-nano
 gpt-4.1-nano-2025-04-14
 ```
 
-### GPT-4 (7)
+#### GPT-4 (7)
 
 ```text
 gpt-4
@@ -131,7 +233,7 @@ gpt-4-turbo-2024-04-09
 gpt-4-turbo-preview
 ```
 
-### GPT-3.5 (6)
+#### GPT-3.5 (6)
 
 ```text
 gpt-3.5-turbo
@@ -142,7 +244,7 @@ gpt-3.5-turbo-instruct
 gpt-3.5-turbo-instruct-0914
 ```
 
-### Embeddings (3)
+#### Embeddings (3)
 
 ```text
 text-embedding-3-large
@@ -150,14 +252,14 @@ text-embedding-3-small
 text-embedding-ada-002
 ```
 
-### Moderation (2)
+#### Moderation (2)
 
 ```text
 omni-moderation-2024-09-26
 omni-moderation-latest
 ```
 
-### Images (6)
+#### Images (6)
 
 ```text
 chatgpt-image-latest
@@ -168,7 +270,7 @@ gpt-image-1-mini
 gpt-image-1.5
 ```
 
-### Audio / Realtime (27)
+#### Audio / Realtime (27)
 
 ```text
 gpt-4o-audio-preview
@@ -200,31 +302,30 @@ tts-1-hd-1106
 whisper-1
 ```
 
-### Computer Use (2)
+#### Computer Use (2)
 
 ```text
 computer-use-preview
 computer-use-preview-2025-03-11
 ```
 
-### Legacy (2)
+#### Legacy (2)
 
 ```text
 babbage-002
 davinci-002
 ```
 
-### Other (2)
+#### Other (2)
 
 ```text
 sora-2
 sora-2-pro
 ```
 
-## OpenClaw note (allowlist)
+## OpenClaw note (model allowlist)
 
 If your `openclaw.json` sets `agents.defaults.models`, that becomes a **model allowlist**.
-
 To use additional OpenAI models in OpenClaw, either:
 - add them under `agents.defaults.models`, or
 - remove/empty the allowlist so `/model` can pick anything.
