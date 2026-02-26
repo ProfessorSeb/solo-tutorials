@@ -1,0 +1,31 @@
+# yaml-language-server: $schema=https://agentgateway.dev/schema/config
+# Standalone agentgateway config for proxying OpenAI.
+#
+# Notes:
+# - Env vars are expanded (so $OPENAI_API_KEY works).
+# - Route matching is *suffix* based. "*" is a catch-all.
+# - "*" MUST be quoted in YAML or it becomes an alias.
+# - /v1/models should be passthrough (agentgateway has a Models route type but it is NOT implemented).
+
+binds:
+- port: 18080
+  listeners:
+  - name: openai
+    protocol: HTTP
+    routes:
+    - name: openai-upstream
+      policies:
+        # agentgateway will attach this key to outgoing requests.
+        backendAuth:
+          key: $OPENAI_API_KEY
+      backends:
+      - ai:
+          name: openai
+          provider:
+            openAI: {}
+          policies:
+            ai:
+              routes:
+                /v1/chat/completions: completions
+                /v1/responses: responses
+                "*": passthrough

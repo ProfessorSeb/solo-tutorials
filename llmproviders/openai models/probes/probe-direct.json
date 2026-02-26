@@ -1,0 +1,1233 @@
+{
+  "meta": {
+    "generatedAt": "2026-02-26T14:33:42.609304-05:00",
+    "baseUrl": "https://api.openai.com",
+    "authMode": "bearer",
+    "totalModels": 122,
+    "durationSeconds": 358.5
+  },
+  "results": [
+    {
+      "model": "babbage-002",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1185
+    },
+    {
+      "model": "chatgpt-image-latest",
+      "category": "image",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 10631
+    },
+    {
+      "model": "computer-use-preview",
+      "category": "computer_use",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 747
+    },
+    {
+      "model": "computer-use-preview-2025-03-11",
+      "category": "computer_use",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1581
+    },
+    {
+      "model": "dall-e-2",
+      "category": "dalle",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 6793
+    },
+    {
+      "model": "dall-e-3",
+      "category": "dalle",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 18045
+    },
+    {
+      "model": "davinci-002",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 907
+    },
+    {
+      "model": "gpt-3.5-turbo",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 923
+    },
+    {
+      "model": "gpt-3.5-turbo-0125",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 999
+    },
+    {
+      "model": "gpt-3.5-turbo-1106",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 623
+    },
+    {
+      "model": "gpt-3.5-turbo-16k",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 648
+    },
+    {
+      "model": "gpt-3.5-turbo-instruct",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 3244
+    },
+    {
+      "model": "gpt-3.5-turbo-instruct-0914",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 3694
+    },
+    {
+      "model": "gpt-4",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 708
+    },
+    {
+      "model": "gpt-4-0125-preview",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1110
+    },
+    {
+      "model": "gpt-4-0613",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1286
+    },
+    {
+      "model": "gpt-4-1106-preview",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1128
+    },
+    {
+      "model": "gpt-4-turbo",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 3866
+    },
+    {
+      "model": "gpt-4-turbo-2024-04-09",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 745
+    },
+    {
+      "model": "gpt-4-turbo-preview",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 955
+    },
+    {
+      "model": "gpt-4.1",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 594
+    },
+    {
+      "model": "gpt-4.1-2025-04-14",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 625
+    },
+    {
+      "model": "gpt-4.1-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 680
+    },
+    {
+      "model": "gpt-4.1-mini-2025-04-14",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 912
+    },
+    {
+      "model": "gpt-4.1-nano",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 939
+    },
+    {
+      "model": "gpt-4.1-nano-2025-04-14",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 852
+    },
+    {
+      "model": "gpt-4o",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1302
+    },
+    {
+      "model": "gpt-4o-2024-05-13",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 565
+    },
+    {
+      "model": "gpt-4o-2024-08-06",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1239
+    },
+    {
+      "model": "gpt-4o-2024-11-20",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 899
+    },
+    {
+      "model": "gpt-4o-audio-preview",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 739
+    },
+    {
+      "model": "gpt-4o-audio-preview-2024-12-17",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 716
+    },
+    {
+      "model": "gpt-4o-audio-preview-2025-06-03",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1012
+    },
+    {
+      "model": "gpt-4o-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1117
+    },
+    {
+      "model": "gpt-4o-mini-2024-07-18",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 565
+    },
+    {
+      "model": "gpt-4o-mini-audio-preview",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1003
+    },
+    {
+      "model": "gpt-4o-mini-audio-preview-2024-12-17",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 919
+    },
+    {
+      "model": "gpt-4o-mini-realtime-preview",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 233
+    },
+    {
+      "model": "gpt-4o-mini-realtime-preview-2024-12-17",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 214
+    },
+    {
+      "model": "gpt-4o-mini-search-preview",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1819
+    },
+    {
+      "model": "gpt-4o-mini-search-preview-2025-03-11",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1029
+    },
+    {
+      "model": "gpt-4o-mini-transcribe",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 608
+    },
+    {
+      "model": "gpt-4o-mini-transcribe-2025-03-20",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 983
+    },
+    {
+      "model": "gpt-4o-mini-transcribe-2025-12-15",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 660
+    },
+    {
+      "model": "gpt-4o-mini-tts",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 826
+    },
+    {
+      "model": "gpt-4o-mini-tts-2025-03-20",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 728
+    },
+    {
+      "model": "gpt-4o-mini-tts-2025-12-15",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 805
+    },
+    {
+      "model": "gpt-4o-realtime-preview",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 268
+    },
+    {
+      "model": "gpt-4o-realtime-preview-2024-12-17",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 254
+    },
+    {
+      "model": "gpt-4o-realtime-preview-2025-06-03",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 250
+    },
+    {
+      "model": "gpt-4o-search-preview",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 4278
+    },
+    {
+      "model": "gpt-4o-search-preview-2025-03-11",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 3890
+    },
+    {
+      "model": "gpt-4o-transcribe",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 584
+    },
+    {
+      "model": "gpt-4o-transcribe-diarize",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1311
+    },
+    {
+      "model": "gpt-5",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 804
+    },
+    {
+      "model": "gpt-5-2025-08-07",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 776
+    },
+    {
+      "model": "gpt-5-chat-latest",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 523
+    },
+    {
+      "model": "gpt-5-codex",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 2062
+    },
+    {
+      "model": "gpt-5-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 770
+    },
+    {
+      "model": "gpt-5-mini-2025-08-07",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 692
+    },
+    {
+      "model": "gpt-5-nano",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1002
+    },
+    {
+      "model": "gpt-5-nano-2025-08-07",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 785
+    },
+    {
+      "model": "gpt-5-pro",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 21456
+    },
+    {
+      "model": "gpt-5-pro-2025-10-06",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 25267
+    },
+    {
+      "model": "gpt-5-search-api",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1406
+    },
+    {
+      "model": "gpt-5-search-api-2025-10-14",
+      "category": "search",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 1334
+    },
+    {
+      "model": "gpt-5.1",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 837
+    },
+    {
+      "model": "gpt-5.1-2025-11-13",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 807
+    },
+    {
+      "model": "gpt-5.1-chat-latest",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 802
+    },
+    {
+      "model": "gpt-5.1-codex",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1016
+    },
+    {
+      "model": "gpt-5.1-codex-max",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 762
+    },
+    {
+      "model": "gpt-5.1-codex-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 5033
+    },
+    {
+      "model": "gpt-5.2",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 596
+    },
+    {
+      "model": "gpt-5.2-2025-12-11",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 866
+    },
+    {
+      "model": "gpt-5.2-chat-latest",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 864
+    },
+    {
+      "model": "gpt-5.2-codex",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 842
+    },
+    {
+      "model": "gpt-5.2-pro",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 4478
+    },
+    {
+      "model": "gpt-5.2-pro-2025-12-11",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 2979
+    },
+    {
+      "model": "gpt-5.3-codex",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 713
+    },
+    {
+      "model": "gpt-audio",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 674
+    },
+    {
+      "model": "gpt-audio-1.5",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 852
+    },
+    {
+      "model": "gpt-audio-2025-08-28",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 892
+    },
+    {
+      "model": "gpt-audio-mini",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 740
+    },
+    {
+      "model": "gpt-audio-mini-2025-10-06",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 963
+    },
+    {
+      "model": "gpt-audio-mini-2025-12-15",
+      "category": "audio_chat",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/chat/completions",
+      "http": 200,
+      "error": null,
+      "durationMs": 782
+    },
+    {
+      "model": "gpt-image-1",
+      "category": "image",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 13766
+    },
+    {
+      "model": "gpt-image-1-mini",
+      "category": "image",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 20551
+    },
+    {
+      "model": "gpt-image-1.5",
+      "category": "image",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/images/generations",
+      "http": 200,
+      "error": null,
+      "durationMs": 11035
+    },
+    {
+      "model": "gpt-realtime",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 229
+    },
+    {
+      "model": "gpt-realtime-1.5",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 242
+    },
+    {
+      "model": "gpt-realtime-2025-08-28",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 266
+    },
+    {
+      "model": "gpt-realtime-mini",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 319
+    },
+    {
+      "model": "gpt-realtime-mini-2025-10-06",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 279
+    },
+    {
+      "model": "gpt-realtime-mini-2025-12-15",
+      "category": "realtime",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/realtime/sessions",
+      "http": 200,
+      "error": null,
+      "durationMs": 237
+    },
+    {
+      "model": "o1",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1157
+    },
+    {
+      "model": "o1-2024-12-17",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 3357
+    },
+    {
+      "model": "o1-pro",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 25101
+    },
+    {
+      "model": "o1-pro-2025-03-19",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 53522
+    },
+    {
+      "model": "o3",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 825
+    },
+    {
+      "model": "o3-2025-04-16",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 860
+    },
+    {
+      "model": "o3-deep-research",
+      "category": "deep_research",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 686
+    },
+    {
+      "model": "o3-deep-research-2025-06-26",
+      "category": "deep_research",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1255
+    },
+    {
+      "model": "o3-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 883
+    },
+    {
+      "model": "o3-mini-2025-01-31",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1184
+    },
+    {
+      "model": "o3-pro",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 10147
+    },
+    {
+      "model": "o3-pro-2025-06-10",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 13791
+    },
+    {
+      "model": "o4-mini",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 876
+    },
+    {
+      "model": "o4-mini-2025-04-16",
+      "category": "text",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1346
+    },
+    {
+      "model": "o4-mini-deep-research",
+      "category": "deep_research",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1960
+    },
+    {
+      "model": "o4-mini-deep-research-2025-06-26",
+      "category": "deep_research",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/responses",
+      "http": 200,
+      "error": null,
+      "durationMs": 1646
+    },
+    {
+      "model": "omni-moderation-2024-09-26",
+      "category": "moderation",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/moderations",
+      "http": 200,
+      "error": null,
+      "durationMs": 292
+    },
+    {
+      "model": "omni-moderation-latest",
+      "category": "moderation",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/moderations",
+      "http": 200,
+      "error": null,
+      "durationMs": 661
+    },
+    {
+      "model": "sora-2",
+      "category": "video",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/videos",
+      "http": 400,
+      "error": null,
+      "note": "validation-only (invalid size)",
+      "durationMs": 161
+    },
+    {
+      "model": "sora-2-pro",
+      "category": "video",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/videos",
+      "http": 400,
+      "error": null,
+      "note": "validation-only (invalid size)",
+      "durationMs": 167
+    },
+    {
+      "model": "text-embedding-3-large",
+      "category": "embeddings",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/embeddings",
+      "http": 200,
+      "error": null,
+      "durationMs": 385
+    },
+    {
+      "model": "text-embedding-3-small",
+      "category": "embeddings",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/embeddings",
+      "http": 200,
+      "error": null,
+      "durationMs": 1037
+    },
+    {
+      "model": "text-embedding-ada-002",
+      "category": "embeddings",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/embeddings",
+      "http": 200,
+      "error": null,
+      "durationMs": 419
+    },
+    {
+      "model": "tts-1",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 743
+    },
+    {
+      "model": "tts-1-1106",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 1362
+    },
+    {
+      "model": "tts-1-hd",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 2906
+    },
+    {
+      "model": "tts-1-hd-1106",
+      "category": "tts",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/speech",
+      "http": 200,
+      "error": null,
+      "durationMs": 2311
+    },
+    {
+      "model": "whisper-1",
+      "category": "transcribe",
+      "ok": true,
+      "skipped": false,
+      "endpoint": "/v1/audio/transcriptions",
+      "http": 200,
+      "error": null,
+      "durationMs": 775
+    }
+  ]
+}

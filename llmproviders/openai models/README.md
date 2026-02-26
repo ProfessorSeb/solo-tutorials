@@ -1,6 +1,6 @@
 # OpenAI model support — docs index vs API key
 
-**Generated:** 2026-02-26 10:57 AM EST  
+**Generated:** 2026-02-26 02:41 PM EST  
 **Docs index source:** https://developers.openai.com/api/docs/models  
 **API inventory source:** `GET https://api.openai.com/v1/models`
 
@@ -100,17 +100,42 @@ tts-1-hd
 whisper-1
 ```
 
-## Smoke tests (cheap, endpoint-level sanity check)
+## Runtime probe results (per-model)
 
-- Responses API:
-  - model: `gpt-5.2` → **OK** (HTTP 200)
-- Embeddings API:
-  - model: `text-embedding-3-small` → **OK** (HTTP 200)
+We ran a minimal (low-cost) probe against every model returned by `GET /v1/models` for this API key.
 
-Notes:
-- This repo treats **“supported”** as “the model ID appears in `GET /v1/models` for this API key.”
-- Many models require different endpoints (images/audio/moderation/realtime).
-- We intentionally avoid running a full per-model inference matrix here to keep cost low.
+| Mode | Total | OK | Fail | Output |
+|---|---:|---:|---:|---|
+| Direct OpenAI (`https://api.openai.com`) | 122 | 122 | 0 | [`probes/probe-direct.md`](probes/probe-direct.md) |
+| Via agentgateway (standalone) | 122 | 122 | 0 | [`probes/probe-agentgateway.md`](probes/probe-agentgateway.md) |
+
+Raw JSON:
+- [`probes/probe-direct.json`](probes/probe-direct.json)
+- [`probes/probe-agentgateway.json`](probes/probe-agentgateway.json)
+
+Probe behavior (high level):
+- Text models: `/v1/responses` → `/v1/chat/completions` → `/v1/completions`
+- Deep research: `/v1/responses` with `tools: [{"type":"web_search_preview"}]` (counted OK if accepted, even if `status=incomplete`)
+- Video (sora-*): `/v1/videos` with intentionally invalid `size` (validation-only; no paid generation)
+- Realtime: `/v1/realtime/sessions` (client_secret redacted in JSON output)
+
+Reproduce:
+```bash
+export OPENAI_API_KEY=...
+
+# optional: run the proxy (edit port if needed)
+agentgateway -f agentgateway-standalone.yaml
+
+python3 probe_all_models.py --base-url https://api.openai.com --auth-mode bearer \
+  --out-json probes/probe-direct.json --out-md probes/probe-direct.md
+
+python3 probe_all_models.py --base-url http://localhost:18080 --auth-mode none \
+  --out-json probes/probe-agentgateway.json --out-md probes/probe-agentgateway.md
+```
+
+agentgateway gotchas:
+- Route matching is **suffix-based**; `"*"` is the catch-all and must be quoted in YAML.
+- Keep `/v1/completions` as **passthrough** if you want legacy completion models to work.
 
 ## API model inventory (grouped)
 
